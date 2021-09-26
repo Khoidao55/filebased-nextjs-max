@@ -1,5 +1,6 @@
 import React from 'react';
 import EventItem from '../EventItem/EventItem';
+import classes from './EventList.module.css';
 
 interface Props {
   events: {
@@ -14,7 +15,7 @@ interface Props {
 
 const EventList: React.FC<Props> = ({ events }) => {
   return (
-    <ul>
+    <ul className={classes.list}>
       {events.map(event => (
         <EventItem
           key={event.id}
