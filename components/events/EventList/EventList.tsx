@@ -5,7 +5,6 @@ import classes from './EventList.module.css';
 interface Props {
   events: {
     title: string,
-    description: string,
     location: string,
     date: string,
     image: string,
@@ -20,7 +19,6 @@ const EventList: React.FC<Props> = ({ events }) => {
         <EventItem
           key={event.id}
           title={event.title}
-          description={event.description}
           location={event.location}
           date={event.date}
           image={event.image}
