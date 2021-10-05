@@ -1,10 +1,9 @@
 import React from 'react';
-import { loadGetInitialProps } from 'next/dist/shared/lib/utils';
 import Link from 'next/link';
 import classes from './Button.module.css';
 
 interface Props {
-  children: React.ReactNode,
+  children?: React.ReactNode,
   link: string
 }
 
